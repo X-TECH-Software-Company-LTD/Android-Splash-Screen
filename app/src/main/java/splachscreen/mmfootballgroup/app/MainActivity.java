@@ -17,10 +17,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*splashScreen=new SplashScreenDefault(this);
+       /* splashScreen=new SplashScreenDefault(this);
         splashScreen.create();
-        splashScreen.setBackgroundImage(R.drawable.ghost_bg);
-        splashScreen.setLogo(R.mipmap.ic_launcher);
+        splashScreen.setBackgroundColor("#00ff00");
+        splashScreen.setLogo(R.drawable.slogo);
+        splashScreen.setVersionNameCreate();
+        splashScreen.setVersionNameText("Version 1.1.0");
+        splashScreen.setVersionNameTextStyle(Typeface.NORMAL);
         splashScreen.show();*/
 
 
