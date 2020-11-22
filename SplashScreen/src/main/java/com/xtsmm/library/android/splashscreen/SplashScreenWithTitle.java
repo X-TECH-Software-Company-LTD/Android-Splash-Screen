@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.res.ResourcesCompat;
 
 public class SplashScreenWithTitle {
 
@@ -61,12 +62,31 @@ public class SplashScreenWithTitle {
         tv_splashTitle.setTextColor(Color.parseColor(colorCode));
     }
 
-    public void setTitleTextFontAndStyle(String assetFontPath,int style){
+    public void setTitleTextFontFromAssetAndStyle(String assetFontPath,int style){
         tv_splashTitle=dialog.findViewById(R.id.splah_title);
         Typeface font = Typeface.createFromAsset(
                 activity.getAssets(),
                 assetFontPath);
         tv_splashTitle.setTypeface(font,style);
+    }
+    public void setTitleTextFontAndStyle(int fonts,int style){
+        tv_splashTitle=dialog.findViewById(R.id.splah_title);
+        Typeface font = ResourcesCompat.getFont(activity,fonts);
+        tv_splashTitle.setTypeface(font,style);
+    }
+
+    public void setTitleTextFontFromAsset(String assetFontPath){
+        tv_splashTitle=dialog.findViewById(R.id.splah_title);
+        Typeface font = Typeface.createFromAsset(
+                activity.getAssets(),
+                assetFontPath);
+        tv_splashTitle.setTypeface(font);
+    }
+
+    public void setTitleTextFont(int fonts){
+        tv_splashTitle=dialog.findViewById(R.id.splah_title);
+        Typeface font = ResourcesCompat.getFont(activity,fonts);
+        tv_splashTitle.setTypeface(font);
     }
 
     public void setTitleTextStyle(int style){
@@ -96,12 +116,32 @@ public class SplashScreenWithTitle {
         tv_splashSubTitle.setTextColor(Color.parseColor(colorCode));
     }
 
-    public void setSubTitleTextFontAndStyle(String assetFontPath,int style){
+    public void setSubTitleTextFontFromAssetAndStyle(String assetFontPath,int style){
         tv_splashSubTitle=dialog.findViewById(R.id.splash_subtitle);
         Typeface font = Typeface.createFromAsset(
                 activity.getAssets(),
                 assetFontPath);
         tv_splashSubTitle.setTypeface(font,style);
+    }
+
+    public void setSubTitleTextFontAndStyle(int fonts,int style){
+        tv_splashSubTitle=dialog.findViewById(R.id.splash_subtitle);
+        Typeface font = ResourcesCompat.getFont(activity,fonts);
+        tv_splashSubTitle.setTypeface(font,style);
+    }
+
+    public void setSubTitleTextFontFromAsset(String assetFontPath){
+        tv_splashSubTitle=dialog.findViewById(R.id.splash_subtitle);
+        Typeface font = Typeface.createFromAsset(
+                activity.getAssets(),
+                assetFontPath);
+        tv_splashSubTitle.setTypeface(font);
+    }
+
+    public void setSubTitleTextFont(int fonts){
+        tv_splashSubTitle=dialog.findViewById(R.id.splash_subtitle);
+        Typeface font = ResourcesCompat.getFont(activity,fonts);
+        tv_splashSubTitle.setTypeface(font);
     }
 
     public void setSubTitleTextStyle(int style){
@@ -132,12 +172,32 @@ public class SplashScreenWithTitle {
         tv_splashVersion.setTextColor(Color.parseColor(colorCode));
     }
 
-    public void setVersionNameFontAndStyle(String assetFontPath,int style){
+    public void setVersionNameTextFontFromAssetAndStyle(String assetFontPath,int style){
         tv_splashVersion=dialog.findViewById(R.id.splash_version);
         Typeface font = Typeface.createFromAsset(
                 activity.getAssets(),
                 assetFontPath);
         tv_splashVersion.setTypeface(font,style);
+    }
+
+    public void setVersionNameTextFontAndStyle(int fonts,int style){
+        tv_splashVersion=dialog.findViewById(R.id.splash_version);
+        Typeface font = ResourcesCompat.getFont(activity,fonts);
+        tv_splashVersion.setTypeface(font,style);
+    }
+
+    public void setVersionNameTextFontFromAsset(String assetFontPath){
+        tv_splashVersion=dialog.findViewById(R.id.splash_version);
+        Typeface font = Typeface.createFromAsset(
+                activity.getAssets(),
+                assetFontPath);
+        tv_splashVersion.setTypeface(font);
+    }
+
+    public void setVersionNameTextFont(int fonts){
+        tv_splashVersion=dialog.findViewById(R.id.splash_version);
+        Typeface font = ResourcesCompat.getFont(activity,fonts);
+        tv_splashVersion.setTypeface(font);
     }
 
     public void setVersionNameTextStyle(int style){

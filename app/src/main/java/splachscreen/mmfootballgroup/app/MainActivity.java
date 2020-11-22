@@ -26,15 +26,20 @@ public class MainActivity extends AppCompatActivity {
 
         splashScreenWithName=new SplashScreenWithTitle(this);
         splashScreenWithName.create();
-        splashScreenWithName.setLogo(R.mipmap.ic_launcher);
-        splashScreenWithName.setBackgroundImage(R.drawable.ghost_bg);
-        splashScreenWithName.setTitleText("Myanmar Ghost Stories");
-        splashScreenWithName.setTitleTextSize(20);
-        splashScreenWithName.setSubTitleTextStyle(Typeface.BOLD);
+        splashScreenWithName.setLogo(R.drawable.slogo);
+        splashScreenWithName.setBackgroundImage(R.drawable.sbg);
+        splashScreenWithName.setTitleText("အေ ဘီ စီ ဒီ အီး");
+        splashScreenWithName.setTitleTextSize(45);
+        splashScreenWithName.setTitleTextColor("#0000ff");
+        splashScreenWithName.setSubTitleTextFontFromAssetAndStyle("fonts/Padauk-Regular.ttf",Typeface.BOLD);
+        splashScreenWithName.setSubTitleTextColor("#ff0000");
+        splashScreenWithName.setSubTitleTextSize(20);
+        splashScreenWithName.setSubTitleTextFont(R.font.annie_use_your_telescope);
         splashScreenWithName.setSubTitleCreate();
         splashScreenWithName.setSubTitleText("present");
         splashScreenWithName.setVersionNameCreate();
         splashScreenWithName.setVersionNameText("Version 1.1.0");
+        splashScreenWithName.setVersionNameTextStyle(Typeface.NORMAL);
         splashScreenWithName.show();
     }
 
