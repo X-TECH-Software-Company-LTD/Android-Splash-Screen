@@ -49,6 +49,6 @@ SplashScreenDefault splashScreen=new SplashScreenDefault(this);
         splashScreen.setVersionNameTextStyle(Typeface.NORMAL);
         splashScreen.show();
 ```
+![Image of SplashScreenDefault](https://cdn.xtsmm.com/android/images/1.jpg)
 
-Format:(https://cdn.xtsmm.com/android/images/1.jpg)
 
