@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         new SplashScreenDefault(this).create();
 
 
-        /*splashScreenWithName=new SplashScreenWithTitle(this);
+        splashScreenWithName=new SplashScreenWithTitle(this);
         splashScreenWithName.create();
         splashScreenWithName.setLogo(R.drawable.slogo);
         splashScreenWithName.setBackgroundImage(R.drawable.sbg);
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         splashScreenWithName.setVersionNameCreate();
         splashScreenWithName.setVersionNameText("Version 1.1.0");
         splashScreenWithName.setVersionNameTextStyle(Typeface.NORMAL);
-        splashScreenWithName.show();*/
+        splashScreenWithName.show();
     }
 
     @Override
