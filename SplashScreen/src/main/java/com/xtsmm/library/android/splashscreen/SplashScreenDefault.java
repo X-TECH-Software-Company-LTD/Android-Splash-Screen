@@ -29,21 +29,21 @@ public class SplashScreenDefault {
         dialog.setContentView(R.layout.splash_dialog_default);
     }
 
-    public void setLogo(int SplashLogo){
+    public void setLogo(int splashLogoImage){
         ImageView imageView=dialog.findViewById(R.id.splash_logo);
         imageView.setVisibility(View.VISIBLE);
-        imageView.setImageResource(SplashLogo);
+        imageView.setImageResource(splashLogoImage);
     }
 
-    public void setBackgroundImage(int BackgroundImage){
+    public void setBackgroundImage(int backgroundImage){
         ConstraintLayout constraintLayout=dialog.findViewById(R.id.bg);
-        Drawable myIcon = activity.getResources().getDrawable(BackgroundImage);
+        Drawable myIcon = activity.getResources().getDrawable(backgroundImage);
         constraintLayout.setBackground(myIcon);
     }
 
-    public void setBackgroundColor(String BackgroundClolorCode){
+    public void setBackgroundColor(String backgroundClolorCode){
         ConstraintLayout constraintLayout=dialog.findViewById(R.id.bg);
-        constraintLayout.setBackgroundColor(Color.parseColor(BackgroundClolorCode));
+        constraintLayout.setBackgroundColor(Color.parseColor(backgroundClolorCode));
     }
 
     public void setVersionNameCreate(){
@@ -53,9 +53,9 @@ public class SplashScreenDefault {
 
     }
 
-    public void setVersionNameText(String title){
+    public void setVersionNameText(String text){
         tv_splashVersion=dialog.findViewById(R.id.splash_version);
-        tv_splashVersion.setText(title);
+        tv_splashVersion.setText(text);
 
     }
 

@@ -29,10 +29,10 @@ public class SplashScreenWithTitle {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.splash_dialog_name);
     }
-    public void setLogo(int splashLogo){
+    public void setLogo(int splashLogoImage){
         ImageView imageView=dialog.findViewById(R.id.splash_logo);
         imageView.setVisibility(View.VISIBLE);
-        imageView.setImageResource(splashLogo);
+        imageView.setImageResource(splashLogoImage);
     }
 
     public void setBackgroundImage(int backgroundImage){
@@ -46,9 +46,9 @@ public class SplashScreenWithTitle {
         constraintLayout.setBackgroundColor(Color.parseColor(backgroundClolorCode));
     }
 
-    public void setTitleText(String title){
+    public void setTitleText(String text){
         tv_splashTitle=dialog.findViewById(R.id.splah_title);
-        tv_splashTitle.setText(title);
+        tv_splashTitle.setText(text);
 
     }
 
@@ -100,9 +100,9 @@ public class SplashScreenWithTitle {
 
     }
 
-    public void setSubTitleText(String title){
+    public void setSubTitleText(String text){
         tv_splashSubTitle=dialog.findViewById(R.id.splash_subtitle);
-        tv_splashSubTitle.setText(title);
+        tv_splashSubTitle.setText(text);
 
     }
 
@@ -156,9 +156,9 @@ public class SplashScreenWithTitle {
 
     }
 
-    public void setVersionNameText(String title){
+    public void setVersionNameText(String text){
         tv_splashVersion=dialog.findViewById(R.id.splash_version);
-        tv_splashVersion.setText(title);
+        tv_splashVersion.setText(text);
 
     }
 
