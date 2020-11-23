@@ -28,7 +28,6 @@ public class SplashScreenDefault {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.splash_dialog_default);
     }
-
     public void setLogo(int SplashLogo){
         ImageView imageView=dialog.findViewById(R.id.splash_logo);
         imageView.setVisibility(View.VISIBLE);
