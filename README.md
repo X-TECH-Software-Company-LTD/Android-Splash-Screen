@@ -38,7 +38,7 @@ dependencies {
 
 ## Usage
 
-For SplashScreenDefault
+###### 1. For SplashScreenDefault
 ```
 SplashScreenDefault splashScreen=new SplashScreenDefault(this);
         splashScreen.create();
@@ -57,7 +57,7 @@ splashScreen.hide();
 
 ![Image of SplashScreenDefault](https://cdn.xtsmm.com/android/images/1.jpg)
 
-For SplashScreenWithTitle
+###### 2. For SplashScreenWithTitle
 ```
 SplashScreenWithTitle splashScreenWithName=new SplashScreenWithTitle(this);
         splashScreenWithName.create();
