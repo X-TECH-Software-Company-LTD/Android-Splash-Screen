@@ -31,14 +31,14 @@ allprojects {
 
 ```
 dependencies {
-    implementation(name:'WebPlayer', ext:'aar')
+    implementation(name:'SplashScreen', ext:'aar')
     //other repositories
 }
 ```
 
 ## Usage
 
-For SplashScreenDefault
+###### 1. For SplashScreenDefault
 ```
 SplashScreenDefault splashScreen=new SplashScreenDefault(this);
         splashScreen.create();
@@ -55,9 +55,9 @@ SplashScreen close
 splashScreen.hide();
 ```
 
-![Image of SplashScreenDefault](https://cdn.xtsmm.com/android/images/1.jpg)
+<img src="https://cdn.xtsmm.com/android/images/1.jpg" width="300">
 
-For SplashScreenWithTitle
+###### 2. For SplashScreenWithTitle
 ```
 SplashScreenWithTitle splashScreenWithName=new SplashScreenWithTitle(this);
         splashScreenWithName.create();
@@ -83,6 +83,7 @@ SplashScreen close
 splashScreenWithName.hide();
 ```
 
-![Image of SplashScreenWithTitle](https://cdn.xtsmm.com/android/images/2.jpg)
+<img src="https://cdn.xtsmm.com/android/images/2.jpg" width="300">
+
 
 
