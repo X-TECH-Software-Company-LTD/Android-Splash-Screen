@@ -55,7 +55,7 @@ SplashScreen close
 splashScreen.hide();
 ```
 
-![Image of SplashScreenDefault](https://cdn.xtsmm.com/android/images/1.jpg)
+<img src="https://cdn.xtsmm.com/android/images/1.jpg" width="300">
 
 ###### 2. For SplashScreenWithTitle
 ```
@@ -83,6 +83,7 @@ SplashScreen close
 splashScreenWithName.hide();
 ```
 
-![Image of SplashScreenWithTitle](https://cdn.xtsmm.com/android/images/2.jpg)
+<img src="https://cdn.xtsmm.com/android/images/2.jpg" width="300">
+
 
 
