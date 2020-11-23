@@ -17,17 +17,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       /* splashScreen=new SplashScreenDefault(this);
+        splashScreen=new SplashScreenDefault(this);
         splashScreen.create();
         splashScreen.setBackgroundColor("#00ff00");
         splashScreen.setLogo(R.drawable.slogo);
         splashScreen.setVersionNameCreate();
         splashScreen.setVersionNameText("Version 1.1.0");
         splashScreen.setVersionNameTextStyle(Typeface.NORMAL);
-        splashScreen.show();*/
+        splashScreen.show();
+
+        new SplashScreenDefault(this).create();
 
 
-        splashScreenWithName=new SplashScreenWithTitle(this);
+        /*splashScreenWithName=new SplashScreenWithTitle(this);
         splashScreenWithName.create();
         splashScreenWithName.setLogo(R.drawable.slogo);
         splashScreenWithName.setBackgroundImage(R.drawable.sbg);
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         splashScreenWithName.setVersionNameCreate();
         splashScreenWithName.setVersionNameText("Version 1.1.0");
         splashScreenWithName.setVersionNameTextStyle(Typeface.NORMAL);
-        splashScreenWithName.show();
+        splashScreenWithName.show();*/
     }
 
     @Override
