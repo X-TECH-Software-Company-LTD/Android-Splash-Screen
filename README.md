@@ -31,7 +31,7 @@ allprojects {
 
 ```
 dependencies {
-    implementation(name:'WebPlayer', ext:'aar')
+    implementation(name:'SplashScreen', ext:'aar')
     //other repositories
 }
 ```
