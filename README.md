@@ -3,36 +3,15 @@ To Show Splash Screen.
 
 ## Import Library to Gradle
 
-1 - Download WebPlayer.arr and place inside "projectName/app/libs" folder .
+1 - Download SplashScreen.zip and place inside "projectName/" folder .
 
-https://cdn.xtsmm.com/android/libraries/SplashScreen.aar
+https://cdn.xtsmm.com/android/libraries/SplashScreen.zip
 
-2 - Update Project gradle
-
-```
-flatDir {
-  dirs 'libs'
-}
-```
-sample 
-```
-allprojects {
-    repositories {
-        google()
-        jcenter()
-        flatDir {
-            dirs 'libs'
-        }
-    }
-}
-```
-
-3 - Add Depedency at App gradle
+2 - Add Library at App gradle
 
 ```
 dependencies {
-    implementation(name:'SplashScreen', ext:'aar')
-    //other repositories
+    implementation project(path: ':SplashScreen')
 }
 ```
 
@@ -85,5 +64,46 @@ splashScreenWithName.hide();
 
 <img src="https://cdn.xtsmm.com/android/images/2.jpg" width="300">
 
+###### 3. For SplashScreenWithGif
 
+ 1.Use defaultCreate
+ 
+ ```
+ new SplashScreenWithGif(this).defaultCreate("https://1.bp.blogspot.com/-r5Aj9YbCQQk/UF80dyv17SI/AAAAAAAAEZU/aXoSQPybltI/s1600/Beautiful+3D+hd+nature+wallpaper+mobile+phones++Download++animated+gif+pictures+and+wallpapers++smartphone+phone+wallpapers+backgrounds+images+photos+gif+pictures++moon+water+reflexive.gif",
+                null,
+                "https://images.squarespace-cdn.com/content/v1/5d57c81ebfd83300010c568e/1568881657624-64DAIKETTWGNJM5OXURM/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0uyjK65ACIS1Ro5Gtg_5NxawvmiEeEPz-p1PBnM1Qfd0YvLs_GGCwkX6Y6WN_obWbw/VI_LOGO_SYMBOL_VARIATION.gif",
+                "Myanamr Application","#ff00ff","present","#ffffff",
+                "Version 1.1.0","#ffffff");
+ ```
 
+above code will get a return of webview
+
+###### null background Image will got default Background.
+
+```
+ setContentView(new SplashScreenWithGif(this).defaultCreate("https://1.bp.blogspot.com/-r5Aj9YbCQQk/UF80dyv17SI/AAAAAAAAEZU/aXoSQPybltI/s1600/Beautiful+3D+hd+nature+wallpaper+mobile+phones++Download++animated+gif+pictures+and+wallpapers++smartphone+phone+wallpapers+backgrounds+images+photos+gif+pictures++moon+water+reflexive.gif",
+                null,
+                "https://images.squarespace-cdn.com/content/v1/5d57c81ebfd83300010c568e/1568881657624-64DAIKETTWGNJM5OXURM/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0uyjK65ACIS1Ro5Gtg_5NxawvmiEeEPz-p1PBnM1Qfd0YvLs_GGCwkX6Y6WN_obWbw/VI_LOGO_SYMBOL_VARIATION.gif",
+                "Myanamr Application","#ff00ff","present","#ffffff",
+                "Version 1.1.0","#ffffff"));
+ ```
+
+2.Use noLogoCreate
+ 
+ ```
+ new SplashScreenWithGif(this).noLogoCreate("https://1.bp.blogspot.com/-r5Aj9YbCQQk/UF80dyv17SI/AAAAAAAAEZU/aXoSQPybltI/s1600/Beautiful+3D+hd+nature+wallpaper+mobile+phones++Download++animated+gif+pictures+and+wallpapers++smartphone+phone+wallpapers+backgrounds+images+photos+gif+pictures++moon+water+reflexive.gif",
+                null,
+                "Myanamr Application","#ff00ff","present","#ffffff",
+                "Version 1.1.0","#ffffff");
+ ```
+
+above code will get a return of webview
+
+###### null background Image will got default Background.
+
+```
+ setContentView( new SplashScreenWithGif(this).noLogoCreate("https://1.bp.blogspot.com/-r5Aj9YbCQQk/UF80dyv17SI/AAAAAAAAEZU/aXoSQPybltI/s1600/Beautiful+3D+hd+nature+wallpaper+mobile+phones++Download++animated+gif+pictures+and+wallpapers++smartphone+phone+wallpapers+backgrounds+images+photos+gif+pictures++moon+water+reflexive.gif",
+                null,
+                "Myanamr Application","#ff00ff","present","#ffffff",
+                "Version 1.1.0","#ffffff"));
+ ```
