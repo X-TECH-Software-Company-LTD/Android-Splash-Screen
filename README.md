@@ -7,7 +7,13 @@ To Show Splash Screen.
 
 https://cdn.xtsmm.com/android/libraries/SplashScreen.zip
 
-2 - Add Library at App gradle
+2 - Import Module
+
+```
+File -> New -> Import Module -> select Downloaded "Android JSON" Folder
+```
+
+3 - Add Library at App gradle
 
 ```
 dependencies {
