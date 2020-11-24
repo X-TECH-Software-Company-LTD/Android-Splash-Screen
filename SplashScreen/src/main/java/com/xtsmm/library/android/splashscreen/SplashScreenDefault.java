@@ -27,6 +27,7 @@ public class SplashScreenDefault {
         dialog= new Dialog(activity, android.R.style.Theme_Black_NoTitleBar_Fullscreen);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.splash_dialog_default);
+        dialog.setCancelable(false);
     }
 
     public void setLogo(int splashLogoImage){

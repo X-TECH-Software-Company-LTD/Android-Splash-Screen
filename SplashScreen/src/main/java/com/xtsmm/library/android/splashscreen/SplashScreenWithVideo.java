@@ -7,13 +7,15 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.Window;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.res.ResourcesCompat;
 
-public class SplashScreenWithTitle {
+public class SplashScreenWithVideo {
 
     Activity activity;
     Dialog dialog;
@@ -21,13 +23,14 @@ public class SplashScreenWithTitle {
     TextView tv_splashSubTitle;
     TextView tv_splashVersion;
 
-    public SplashScreenWithTitle(Activity activity) {
+    public SplashScreenWithVideo(Activity activity) {
         this.activity = activity;
     }
+
     public void create(){
         dialog= new Dialog(activity, android.R.style.Theme_Black_NoTitleBar_Fullscreen);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.splash_dialog_name);
+        dialog.setContentView(R.layout.splash_dialog_video);
         dialog.setCancelable(false);
     }
     public void setLogo(int splashLogoImage){
@@ -206,6 +209,11 @@ public class SplashScreenWithTitle {
         tv_splashVersion.setTypeface(null,style);
     }
 
+    public void setView(View view){
+        RelativeLayout relativeLayout=dialog.findViewById(R.id.splash_rl);
+        relativeLayout.addView(view);
+
+    }
 
     public void show(){
         dialog.show();
