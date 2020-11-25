@@ -36,15 +36,20 @@ public class SplashScreenDefault {
         imageView.setImageResource(splashLogoImage);
     }
 
-    public void setBackgroundImage(int backgroundImage){
+    public void setBackgroundImage(int backgroundImageResID){
         ConstraintLayout constraintLayout=dialog.findViewById(R.id.bg);
-        Drawable myIcon = activity.getResources().getDrawable(backgroundImage);
+        Drawable myIcon = activity.getResources().getDrawable(backgroundImageResID);
         constraintLayout.setBackground(myIcon);
     }
 
-    public void setBackgroundColor(String backgroundClolorCode){
+    public void setBackgroundColor(String clolorCode){
         ConstraintLayout constraintLayout=dialog.findViewById(R.id.bg);
-        constraintLayout.setBackgroundColor(Color.parseColor(backgroundClolorCode));
+        constraintLayout.setBackgroundColor(Color.parseColor(clolorCode));
+    }
+
+    public void setBackgroundColor(int clolor){
+        ConstraintLayout constraintLayout=dialog.findViewById(R.id.bg);
+        constraintLayout.setBackgroundColor(clolor);
     }
 
     public void setVersionNameCreate(){
@@ -68,6 +73,11 @@ public class SplashScreenDefault {
     public void setVersionNameTextColor(String colorCode){
         tv_splashVersion=dialog.findViewById(R.id.splash_version);
         tv_splashVersion.setTextColor(Color.parseColor(colorCode));
+    }
+
+    public void setVersionNameTextColor(int color){
+        tv_splashVersion=dialog.findViewById(R.id.splash_version);
+        tv_splashVersion.setTextColor(color);
     }
 
     public void setVersionNameTextFontFromAssetAndStyle(String assetFontPath,int style){
