@@ -3,7 +3,7 @@ To Show Splash Screen.
 
 ## Import Library to Gradle
 
-1 - Download SplashScreen.zip and place inside "projectName/" folder .
+1 - Download SplashScreen.zip and extract it
 
 https://cdn.xtsmm.com/android/libraries/SplashScreen.zip
 
@@ -37,7 +37,7 @@ SplashScreenDefault splashScreen=new SplashScreenDefault(this);
 SplashScreen close
 
 ```
-splashScreen.hide();
+splashScreen.dismiss();
 ```
 
 <img src="https://cdn.xtsmm.com/android/images/1.jpg" width="300">
@@ -65,7 +65,7 @@ SplashScreenWithTitle splashScreenWithName=new SplashScreenWithTitle(this);
 SplashScreen close
 
 ```
-splashScreenWithName.hide();
+splashScreenWithName.dismiss();
 ```
 
 <img src="https://cdn.xtsmm.com/android/images/2.jpg" width="300">
