@@ -119,7 +119,7 @@ public class SplashScreenDefault {
     }
 
 
-    public void hide(){
+    public void dismiss(){
 
         dialog.dismiss();
 

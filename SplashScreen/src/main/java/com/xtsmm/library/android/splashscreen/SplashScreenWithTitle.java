@@ -231,4 +231,10 @@ public class SplashScreenWithTitle {
         dialog.show();
 
     }
+
+    public void dismiss(){
+
+        dialog.dismiss();
+
+    }
 }
